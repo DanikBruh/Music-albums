@@ -19,6 +19,9 @@ img {
     width: 33%;
     text-align: center;
 }
+.image a{
+    text-decoration: none;
+}
 
 .block {
     background-color: purple;
