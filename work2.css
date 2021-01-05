@@ -1,6 +1,44 @@
-#image {
-    width: 100vw;
+.header {
+    text-align: center;
+    margin-bottom: 50px;
 }
-p {
-    color: red;
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 200px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+}
+
+.image {
+    width: 33%;
+    text-align: center;
+}
+
+.block {
+    background-color: purple;
+    height: 200px;
+    width: 200px;
+    border-style: dashed ;
+}
+
+#bl1 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+#bl2 {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
 }
