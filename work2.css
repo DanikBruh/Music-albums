@@ -1,11 +1,13 @@
 .header {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 .container {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 0 200px;
 }
 
@@ -14,14 +16,22 @@ img {
     height: 250px;
     border-radius: 10%;
 }
-
 .image {
-    width: 33%;
+    width: 30%;
+    min-width: 255px;
     text-align: center;
+    margin: 30px 0;
 }
-.image a{
+.image a {
     text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
+img:hover {
+    transform: scale(1.1);
+}
+
+
 
 .block {
     background-color: purple;
@@ -29,7 +39,6 @@ img {
     width: 200px;
     border-style: dashed ;
 }
-
 #bl1 {
     height: 200px;
     width: 200px;
@@ -37,7 +46,6 @@ img {
     border-top-left-radius: 15%;
     border-bottom-right-radius: 15%;
 }
-
 #bl2 {
     height: 200px;
     width: 200px;
