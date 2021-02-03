@@ -1,0 +1,81 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    font-weight: 700;
+    margin: 90px 0 50px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Album */
+.album {
+    width: 33%;
+    min-width: 255px;
+    text-align: center;
+    margin: 50px 0;
+}
+.album h3 {
+    margin-bottom: 18px;
+    color: #333;
+}
+.album img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    transition: all .5s;
+}
+.album img:hover {
+    transform: scale(1.05);
+}
+
+.btn_listen {
+    color: #fff;
+    margin: 20px auto 0;
+    display: block;
+    padding: 4px 12px;
+    font-size: 16px;
+    border: 1px solid #59afff;
+    border-radius: 5%;
+    background-color: #59afff;
+    cursor: pointer;
+}
+.btn_listen a {
+    text-decoration: none;
+    color: #fff;
+}
+.btn_listen span {
+    position: relative;
+    transition: 0.5s;
+}
+.btn_listen span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s;
+}
+.btn_listen:hover span {
+    padding-right: 20px;
+}
+.btn_listen:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.btn_listen:hover {
+    background-color: #46a4fc;
+}
+
+

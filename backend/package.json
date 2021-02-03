@@ -1,0 +1,28 @@
+{
+  "name": "trav",
+  "version": "1.0.0",
+  "description": "Here there is just a single-page app with some of [***Travis Scott's***](https://en.wikipedia.org/wiki/Travis_Scott) albums. \r Clicking to album's image you automatically redirect to music album page with all the tracks on [***Spotify***](https://www.spotify.com/us/).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanikBruh/jsWork2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanikBruh/jsWork2/issues"
+  },
+  "homepage": "https://github.com/DanikBruh/jsWork2#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "sequelize": "^6.4.0",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.0"
+  }
+}

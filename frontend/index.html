@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Music albums</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <h1 class="header">Travis Scott's albums</h1>
+
+
+    <div class="container" id="musicAlbums">
+        <div class="album" v-for="album in albums" v-if="album.id < 7">
+            <h3>{{ album.name }}</h3>
+            <img :src="album.avatar">
+                <button class="btn_listen">
+                    <a :href="album.spotify_page" target="_blank"><span>listen</span></a>
+                </button>
+        </div>
+
+        <h1 class="header">Don Toliver's albums</h1>
+
+        <div class="album" v-for="album in albums" v-if="album.id > 6">
+            <h3>{{ album.name }}</h3>
+            <img :src="album.avatar">
+                <button class="btn_listen">
+                    <a :href="album.spotify_page" target="_blank"><span>listen</span></a>
+                </button>
+        </div>
+    </div> <!-- container  -->
+
+
+
+   <div class="container" id="musicAlbums">
+        
+    </div> <!-- container  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src='work2.js'></script>
+</body>
+
+</html>
