@@ -16,7 +16,6 @@
 
     <h1 class="header">Travis Scott's albums</h1>
 
-
     <div class="container" id="musicAlbums">
         <div class="album" v-for="album in albums" v-if="album.id < 7">
             <h3>{{ album.name }}</h3>
@@ -28,7 +27,17 @@
 
         <h1 class="header">Don Toliver's albums</h1>
 
-        <div class="album" v-for="album in albums" v-if="album.id > 6">
+        <div class="album" v-for="album in albums" v-if="album.id > 6 && album.id <= 9">
+            <h3>{{ album.name }}</h3>
+            <img :src="album.avatar">
+                <button class="btn_listen">
+                    <a :href="album.spotify_page" target="_blank"><span>listen</span></a>
+                </button>
+        </div>
+
+        <h1 class="header">The Weeknd's albums</h1>
+
+        <div class="album" v-for="album in albums" v-if="album.id > 9">
             <h3>{{ album.name }}</h3>
             <img :src="album.avatar">
                 <button class="btn_listen">
@@ -37,11 +46,24 @@
         </div>
     </div> <!-- container  -->
 
-
-
-   <div class="container" id="musicAlbums">
-        
-    </div> <!-- container  -->
+    <table id="table">
+        <tr>
+            <th>1st column</th>
+            <th>2nd column</th>
+            <th>3rd column</th>
+        </tr>
+        <tr>
+            <th>1st column</th>
+            <th>2nd column</th>
+            <th>3rd column</th>
+        </tr>
+        <tr>
+            <th>1st column</th>
+            <th>2nd column</th>
+            <th>3rd column</th>
+        </tr>
+            
+    </table>
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

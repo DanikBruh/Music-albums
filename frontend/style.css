@@ -5,13 +5,15 @@
     padding: 0;
 }
 
+/*  Header text  */
 .header {
     text-align: center;
     font-weight: 700;
     margin: 90px 0 50px;
+    width: 100%;
 }
 
-/* Container */
+/*  Container  */
 .container {
     width: 100%;
     display: flex;
@@ -19,7 +21,7 @@
     flex-wrap: wrap;
 }
 
-/* Album */
+/*  Album  */
 .album {
     width: 33%;
     min-width: 255px;
@@ -40,6 +42,7 @@
     transform: scale(1.05);
 }
 
+/*  Album's button  */
 .btn_listen {
     color: #fff;
     margin: 20px auto 0;
@@ -78,4 +81,20 @@
     background-color: #46a4fc;
 }
 
+
+table {
+    border: 2px;
+    margin: auto;
+    width: 50%;
+    height: 700px;
+}
+th {
+    background-color: #333;
+    color: #fff;
+    transition: all .1s;
+}
+/* th:hover {
+    background-color: #fff;
+    color: #333;
+} */
 
