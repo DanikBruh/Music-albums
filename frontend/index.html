@@ -17,7 +17,7 @@
     <h1 class="header">Travis Scott's albums</h1>
 
     <div class="container" id="musicAlbums">
-        <div class="album" v-for="album in albums" v-if="album.id < 7">
+        <div class="album" v-for="album in albums" v-if="album.author == 'Travis Scott'">
             <h3>{{ album.name }}</h3>
             <img :src="album.avatar">
                 <button class="btn_listen">
@@ -27,7 +27,7 @@
 
         <h1 class="header">Don Toliver's albums</h1>
 
-        <div class="album" v-for="album in albums" v-if="album.id > 6 && album.id <= 9">
+        <div class="album" v-for="album in albums" v-if="album.author == 'Don Toliver'">
             <h3>{{ album.name }}</h3>
             <img :src="album.avatar">
                 <button class="btn_listen">
@@ -37,7 +37,7 @@
 
         <h1 class="header">The Weeknd's albums</h1>
 
-        <div class="album" v-for="album in albums" v-if="album.id > 9">
+        <div class="album" v-for="album in albums" v-if="album.author == 'The Weeknd'">
             <h3>{{ album.name }}</h3>
             <img :src="album.avatar">
                 <button class="btn_listen">

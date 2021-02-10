@@ -3,12 +3,7 @@ const url = "http://localhost:3000/albums";
 var app = new Vue({
     el: '#musicAlbums',
     data: {
-        albums: [],
-        // album: {
-        //     name: null,
-        //     spotify_page: null,
-        //     avatar: null,
-        // }
+        albums: []
     },
     mounted() { 
         axios.get(url).then(res => {
@@ -17,6 +12,8 @@ var app = new Vue({
     }
 })
 
+
+//  Table animation
 var table = document.getElementById('table');
 var array = table.children;
 var tableCells = [];

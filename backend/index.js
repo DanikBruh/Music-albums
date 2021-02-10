@@ -12,6 +12,7 @@ const sequelize = new Sequelize('sqlite:./albums.db', {
 
 class User extends Model {} // Определение модели
 User.init({
+    author: DataTypes.STRING,
     name: DataTypes.STRING,
     spotify_page: DataTypes.STRING,
     avatar: DataTypes.STRING,
